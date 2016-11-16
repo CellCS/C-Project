@@ -1,0 +1,5 @@
+c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\bin\theProject.dll
+c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\bin\theProject.pdb
+c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.dll
+c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.pdb
+c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.csprojResolveAssemblyReference.cache
