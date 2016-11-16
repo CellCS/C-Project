@@ -24,26 +24,29 @@ public class DBOpreation
             using (SqlConnection sqlcon = new SqlConnection(SQLString))
             {
                 sqlcon.Open();
-                String sql = "select * from person where name = @name and password = @password";
+                String sql = "select id, name, usertype,image from person where name = @name and password = @password";
                 command = new SqlCommand(sql, sqlcon);
                 SqlParameter theName = new SqlParameter("@name", name);
                 SqlParameter thePwd = new SqlParameter("@password", password);
                 command.Parameters.Add(theName);
                 command.Parameters.Add(thePwd);
                 read = command.ExecuteReader();
-                while (read.NextResult())
+                while (read.Read())
                 {
-                    user.setId(read.GetInt32(0));
-                    user.setName(read.GetString(1));
-                    user.setType(read.GetInt32(3));
-                    user.setImage(read.GetString(7));
+                    user = new User();
+                    user.setId((int)read["id"]);
+                    user.setName(read["name"].ToString());
+                    user.setStyle((int)read["usertype"]);
+                    user.setImage(read["image"].ToString());
                 }
+                return user;
             }
         }
         catch (Exception e)
         {
+
             Console.WriteLine(e.Message);
+            return null;
         }
-        return user;
     }
 }
