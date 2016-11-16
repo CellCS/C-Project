@@ -17,18 +17,15 @@
 		    <hr class="hr15"/>
 		    <input id="password" placeholder="密码" type="password" runat="server"/>
 		    <hr class="hr15"/>
-            <table>
-            <tr>
-            <td><input id="checkNum" placeholder="验证码" type="text" runat="server" style="width:180px;float:left;margin-left:-1px;"/></td>
-            <td><asp:Image id="img1" runat="server"  style="margin-left:6px;height:48px;width:150px;float:left;"/></td>
-            </tr>
-            </table>
-            <hr class="hr15"/>
 		    <input id="Submit1"  value="登录" style="width:100%;" type="submit" onserverclick="btn_enter" runat="server"/>
-		    <hr class="hr20"/>
+            <hr class="hr5"/>
+		    <asp:CheckBox ID="CheckBox1" runat="server" Text="七天内免密码登入" style="color:#27A9E3;cursor:pointer;"/>
+            <hr class="hr20"/>
             <a href="enroll.aspx"><input id="btn_enroll" value="注册" type="button" onclick="window.location.href('enroll.aspx')" style="width:100%;"/></a>
-		    <hr class="hr20"/>
-		    <a onclick="alert('请联系管理员(代炜)')">忘记密码</a> 
+		    <hr class="hr5"/>
+            <a onclick="alert('请联系管理员(代炜)')">忘记密码</a> 
+            
+		    
         </form>
     </div>
     <div id="copyRight">©by大S211小组</div>

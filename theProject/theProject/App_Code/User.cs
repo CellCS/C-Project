@@ -11,7 +11,7 @@ public class User
     private int id;
     private String name;
     private String password;
-    private int style;
+    private int type;
     private String detail;
     private String tele;
     private String QQnum;
@@ -32,9 +32,9 @@ public class User
         this.password = password;
     }
 
-    public void setStyle(int style)
+    public void setType(int type)
     {
-        this.style = style;
+        this.type = type;
     }
 
     public void setDetail(String detail)
@@ -72,9 +72,9 @@ public class User
         return this.password;
     }
 
-    public int getStyle()
+    public int getType()
     {
-        return this.style;
+        return this.type;
     }
 
     public String getDetail()
