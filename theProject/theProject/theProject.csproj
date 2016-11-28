@@ -18,7 +18,7 @@
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +62,7 @@
       <DependentUpon>C#_Project.mdf</DependentUpon>
     </Content>
     <Content Include="App_Data\C#数据库 .sql" />
+    <Content Include="css\login_css.css" />
     <Content Include="enroll.aspx" />
     <Content Include="images\blackTriangle.png" />
     <Content Include="images\login_bg.jpg" />
@@ -102,6 +103,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="userImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

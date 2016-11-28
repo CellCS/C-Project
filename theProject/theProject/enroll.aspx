@@ -46,7 +46,7 @@
         margin: 0 0 20px -18px;
         position: relative;
     }
-    #userName,#actNum,#passWord,#checkPassWord,#telNum,#QQNum
+    #userName,#passWord,#checkPassWord,#telNum,#QQNum
     {
         border: 1px solid #DCDEE0;
         vertical-align: middle;
@@ -109,47 +109,44 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="main" style="width:660px;height:700px;background-color: #ffffff;margin:30px auto;border-radius: 4px;">
-    <div id="blank" style="height:50px;"></div>
+    <div id="main" style="width:660px;height:640px;background-color: #ffffff;margin:30px auto;border-radius: 4px;">
+    <div id="blank" style="height:50px;">
+        </div>
     <div id="titleName" >欢迎注册师大易物网</div>
     <div id="blackTri"></div>
         <div id="left" style="width:300px;background-color: #ffffff;float:left;margin:0 10px 20px 20px;border:1px solid #DCDEE0;border-radius: 4px;padding:10px;">
              <hr class="hr15"/>
-            <asp:TextBox placeholder="用户名" ID="userName"  runat="server"></asp:TextBox>
+            <asp:TextBox placeholder="用户名（1-10个字符）" ID="userName"  runat="server" AutoPostBack="True" OnTextChanged="userName_TextChanged" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <hr class="hr15"/>
-            <asp:TextBox placeholder="账号" ID="actNum" runat="server"></asp:TextBox>
+            <asp:TextBox placeholder="密码（8-16个字符）" ID="passWord" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <hr class="hr15"/>
-            <asp:TextBox placeholder="密码" ID="passWord" runat="server" TextMode="Password"></asp:TextBox>
-            <br />
-            <hr class="hr15"/>
-            <asp:TextBox placeholder="确认密码" ID="checkPassWord" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox placeholder="再输一遍" ID="checkPassWord" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <hr class="hr15" />
-            <asp:TextBox placeholder="电话号码" ID="telNum" runat="server"></asp:TextBox>
+            <asp:TextBox placeholder="电话号码" ID="telNum" runat="server" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <hr class="hr15"/>
-            <asp:TextBox placeholder="QQ号码" ID="QQNum" runat="server"></asp:TextBox>
+            <asp:TextBox placeholder="QQ号码" ID="QQNum" runat="server" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <hr class="hr15"/>
-            <asp:TextBox placeholder="个人简介" ID="informText" runat="server" TextMode="MultiLine" style="width:100%;height:100px;border: 1px solid #DCDEE0;border-radius: 3px;padding: 5px 16px;font-size: 12px;color: #555555;"></asp:TextBox>
+            <asp:TextBox placeholder="个人简介" ID="informText" runat="server" TextMode="MultiLine" style="width:100%;height:100px;border: 1px solid #DCDEE0;border-radius: 3px;padding: 5px 16px;font-size: 12px;color: #555555;" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <hr class="hr20"/>
-            <asp:Button ID="submit1" runat="server" Text="提交" />
+            <asp:Button ID="submit1" runat="server" Text="提交" OnClick="submit1_Click" />
             <br />
             <a href="login.aspx"><<已注册,返回登录</a>
         </div>
-        <div id="right" style="width:300px;background-color: #ffffff;float:right;margin:0px 20px 20px 0;border:1px solid #DCDEE0;border-radius: 4px;padding:10px;">
-    
+
+        <div style="width:300px;background-color: #ffffff;float:right;margin:0px 20px 20px 0;border:1px solid #DCDEE0;border-radius: 4px;padding:10px;">
             <div style="width:200px;height:200px;margin:50px auto 30px;border:2px solid #DCDEE0 ">
                 <asp:Image ID="userPhoto" runat="server" 
                     style="width:200px;height:200px;" 
-                    ImageUrl="~/images/默认头像.png"/></div>
+                    ImageUrl="~/images/默认头像.png" ImageAlign="Left"/></div>
             <div style="margin:0 auto;width:70%;"><asp:FileUpload ID="fileUpload1" runat="server" style="width:100%;padding:6px 12px;font-size:12px;"/></div>
             <br />
-            <div style="margin:0 auto;width:70%;"><asp:Button ID="upload1" runat="server" Text="上传头像" style="width:100%;padding:6px 12px;font-size:12px;"/></div>
-    
+            <div style="margin:0 auto;width:70%;"><asp:Button ID="upload1" runat="server" Text="上传头像" style="width:100%;padding:6px 12px;font-size:12px;" OnClick="upload1_Click"/></div>
         </div>
     </div>
     <div id="copyRight">©by大S211小组</div>

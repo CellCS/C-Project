@@ -7,7 +7,7 @@ create table person(
 id int primary key identity(1,1),
 name varchar(50) not null,
 password varchar(100) not null,
-usertype tinyint not null comment"0为买家，1为卖家",
+usertype int not null comment"1为买家，2为卖家，3为管理员",
 detail varchar(200),
 QQNum varchar(15),
 tele varchar(11) not null,

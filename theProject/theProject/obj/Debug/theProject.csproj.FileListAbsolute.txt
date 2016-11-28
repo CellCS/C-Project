@@ -3,3 +3,8 @@ c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\bin\th
 c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.dll
 c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.pdb
 c:\users\dell\documents\visual studio 2012\projects\theProject\theProject\obj\Debug\theProject.csprojResolveAssemblyReference.cache
+F:\pic\theProject\theProject\bin\theProject.dll
+F:\pic\theProject\theProject\bin\theProject.pdb
+F:\pic\theProject\theProject\obj\Debug\theProject.csprojResolveAssemblyReference.cache
+F:\pic\theProject\theProject\obj\Debug\theProject.dll
+F:\pic\theProject\theProject\obj\Debug\theProject.pdb

@@ -40,15 +40,6 @@ namespace theProject {
         protected global::System.Web.UI.WebControls.TextBox userName;
         
         /// <summary>
-        /// actNum 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox actNum;
-        
-        /// <summary>
         /// passWord 控件。
         /// </summary>
         /// <remarks>
@@ -65,6 +56,24 @@ namespace theProject {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox checkPassWord;
+        
+        /// <summary>
+        /// telNum 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox telNum;
+        
+        /// <summary>
+        /// QQNum 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox QQNum;
         
         /// <summary>
         /// informText 控件。
@@ -92,6 +101,15 @@ namespace theProject {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image userPhoto;
+        
+        /// <summary>
+        /// fileUpload1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fileUpload1;
         
         /// <summary>
         /// upload1 控件。
